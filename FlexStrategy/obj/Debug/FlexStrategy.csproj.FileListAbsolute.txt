@@ -1,0 +1,7 @@
+C:\Users\wbratz\source\repos\FlexStrategy\FlexStrategy\bin\Debug\FlexStrategy.exe.config
+C:\Users\wbratz\source\repos\FlexStrategy\FlexStrategy\bin\Debug\FlexStrategy.exe
+C:\Users\wbratz\source\repos\FlexStrategy\FlexStrategy\bin\Debug\FlexStrategy.pdb
+C:\Users\wbratz\source\repos\FlexStrategy\FlexStrategy\obj\Debug\FlexStrategy.csprojAssemblyReference.cache
+C:\Users\wbratz\source\repos\FlexStrategy\FlexStrategy\obj\Debug\FlexStrategy.csproj.CoreCompileInputs.cache
+C:\Users\wbratz\source\repos\FlexStrategy\FlexStrategy\obj\Debug\FlexStrategy.exe
+C:\Users\wbratz\source\repos\FlexStrategy\FlexStrategy\obj\Debug\FlexStrategy.pdb
