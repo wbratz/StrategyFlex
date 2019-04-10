@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Code\Flexerator.cs" />
     <Compile Include="Code\IShoutFlex.cs" />
     <Compile Include="Code\strats\BroFlex.cs" />
     <Compile Include="Code\strats\NerdFlex.cs" />

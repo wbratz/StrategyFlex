@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FlexStrategy.Code;
 
 namespace FlexStrategy
 {
@@ -16,27 +17,29 @@ namespace FlexStrategy
 
             while (run)
             {
-                IShoutFlex flex;
-                Console.WriteLine("Choose a type: Bro, Nerd, or Other");
+                Flexerator flexerator = new Flexerator();
+                Console.WriteLine("Choose a type: Bro, Nerd, Other, or Next Level");
                 var response = Console.ReadLine();
 
                 switch (response.ToLower())
                 {
                     case "bro":
-                        flex = new BroFlex();
+                        flexerator.MakeAFlex(new BroFlex());
                         break;
                     case "nerd":
-                        flex = new NerdFlex();
+                        flexerator.MakeAFlex(new NerdFlex());
                         break;
                     case "other":
-                        flex = new SomeOtherFlex();
+                        flexerator.MakeAFlex(new SomeOtherFlex());
                         break;
-
+                    case "next level":
+                        flexerator.MakeAFlex(new NextLevelFlex());
+                        break;
                     default:
                         throw new ArgumentOutOfRangeException(response);
                 }
 
-                var shout = flex.ShoutFlex();
+                var shout = flexerator.FlexOnEm();
 
                 Console.WriteLine(shout);
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FlexStrategy
 {
-    internal interface IShoutFlex
+    public interface IShoutFlex
     {
         string ShoutFlex();
     }
