@@ -43,10 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Code\Decorations\FlexDecorator.cs" />
+    <Compile Include="Code\Decorations\TimesPlayed.cs" />
     <Compile Include="Code\Flexerator.cs" />
     <Compile Include="Code\IShoutFlex.cs" />
     <Compile Include="Code\strats\BroFlex.cs" />
+    <Compile Include="Code\strats\manbun.cs" />
     <Compile Include="Code\strats\NerdFlex.cs" />
+    <Compile Include="Code\strats\NextLevelFlex.cs" />
     <Compile Include="Code\strats\SomeOtherFlex.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -54,5 +58,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

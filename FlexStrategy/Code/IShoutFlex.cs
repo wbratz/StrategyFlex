@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace FlexStrategy
 {
-    public interface IShoutFlex
+    public  abstract class IShoutFlex
     {
-        string ShoutFlex();
+        public abstract string ShoutFlex();
     }
 }

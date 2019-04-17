@@ -8,7 +8,7 @@ namespace FlexStrategy.Code.strats
 {
     internal class BroFlex : IShoutFlex
     {
-        public string ShoutFlex()
+        public override string ShoutFlex()
         {
             var flex = "COME AT ME BRO!";
             return flex;

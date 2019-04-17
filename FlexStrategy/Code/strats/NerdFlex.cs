@@ -8,7 +8,7 @@ namespace FlexStrategy.Code.strats
 {
     class NerdFlex : IShoutFlex
     {
-        public string ShoutFlex()
+        public override string ShoutFlex()
         {
             var flex = "Weird flex but ok!";
             return flex;

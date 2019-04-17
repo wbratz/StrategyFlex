@@ -2,9 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using FlexStrategy.Code;
+using FlexStrategy.Code.Decorations;
 
 namespace FlexStrategy
 {
@@ -14,33 +17,36 @@ namespace FlexStrategy
         {
             var run = true;
             var wannaPlayCheck = "Wanna play again, Y or N?";
-
+            var playTimeCount = 0;
             while (run)
             {
-                Flexerator flexerator = new Flexerator();
-                Console.WriteLine("Choose a type: Bro, Nerd, Other, or Next Level");
+                Console.WriteLine("Choose a type: Bro, Nerd, Other, Next Level, or manbun");
                 var response = Console.ReadLine();
+                TimesPlayed play;
 
                 switch (response.ToLower())
                 {
                     case "bro":
-                        flexerator.MakeAFlex(new BroFlex());
+                        play = new TimesPlayed(new BroFlex(), playTimeCount);
                         break;
                     case "nerd":
-                        flexerator.MakeAFlex(new NerdFlex());
+                        play = new TimesPlayed(new NerdFlex(), playTimeCount);
                         break;
                     case "other":
-                        flexerator.MakeAFlex(new SomeOtherFlex());
+                        play = new TimesPlayed(new SomeOtherFlex(), playTimeCount);
                         break;
                     case "next level":
-                        flexerator.MakeAFlex(new NextLevelFlex());
+                        play = new TimesPlayed(new NextLevelFlex(), playTimeCount);
+                        break;
+                    case "manbun":
+                        play = new TimesPlayed(new manbun(), playTimeCount);
                         break;
                     default:
                         throw new ArgumentOutOfRangeException(response);
                 }
-
-                var shout = flexerator.FlexOnEm();
-
+                
+                var shout = play.ShoutFlex();
+                
                 Console.WriteLine(shout);
 
                 Console.WriteLine(wannaPlayCheck);
@@ -49,6 +55,7 @@ namespace FlexStrategy
 
                 if(playResponse.ToLower().Equals("y"))
                 {
+                    playTimeCount++;
                     run = true;
                 }
                 else

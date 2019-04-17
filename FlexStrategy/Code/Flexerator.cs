@@ -8,7 +8,6 @@ namespace FlexStrategy.Code
 {
     public class Flexerator
     {
-        public string flexer;
         private IShoutFlex _shoutFlex;
 
         public void MakeAFlex(IShoutFlex flex)

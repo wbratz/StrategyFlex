@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace FlexStrategy.Code.strats
 {
-    internal class NextLevelFlex : IShoutFlex
+    public class manbun : IShoutFlex
     {
         public override string ShoutFlex()
         {
-            var flex = "Sorry this flexer has flexed so hard that the world has exploded, you lose";
-            return flex;
+            return "ZOMG!";
         }
     }
 }
